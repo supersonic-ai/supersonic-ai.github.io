@@ -1,1 +1,33 @@
-Hello! This is supersonic-ai!
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(function(){
+        $.ajax({
+            type:"get",
+            url:"https://github.com/tencentmusic/supersonic/blob/master/README_CN.md",
+            dataType:"html",
+            success:function(res){
+               show(res)
+            }
+        })
+        function show(data) {
+            document.getElementById('content').innerHTML = marked.parse(data);
+        }
+    })
+</script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div id="content"></div>
+</body>
+</html>
+
