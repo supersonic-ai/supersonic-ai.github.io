@@ -1,6 +1,6 @@
 +++
 title = "系统构建和启动"
 description = ""
-weight = 2
+weight = 3
 
 +++

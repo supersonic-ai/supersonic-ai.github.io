@@ -1,7 +1,7 @@
 +++
 title = "设计思路"
 description = ""
-weight = 1
+weight = 2
 +++
 
 通过自然语言界面（Natural Language Interface）访问数据是数据库上古大神们就开始畅想的情境，在学术界也一直是专门的研究方向。对我们影响比较大的两篇论文是IBM在2016年发表的[ATHENA](http://www.vldb.org/pvldb/vol9/p1209-saha.pdf)和谷歌在2017年发表的[Analyza](https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/45791.pdf)，但它是纯基于规则的工程实现。2017年之后，随着大规模数据集[Seq2SQL](https://arxiv.org/pdf/1709.00103.pdf)和[Spider](https://aclanthology.org/D18-1425.pdf)发布，基于AI模型的解决方案如雨后春笋般涌现，从seq2seq到slot filling，从schema linking到intermediate representation，各种奇淫技巧不一而足。直到ChatGPT横空出世，基于prompting来实现Text-to-SQL几乎成了大家的共识。
